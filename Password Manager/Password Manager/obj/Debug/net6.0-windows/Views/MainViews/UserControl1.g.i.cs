@@ -53,7 +53,7 @@ namespace Password_Manager.Views.MainViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Password Manager;component/views/mainviews/usercontrol1.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Password Manager;V1.0.0.0;component/views/mainviews/usercontrol1.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\MainViews\UserControl1.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -1534,6 +1534,10 @@
       "GlobalClasses/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Ninject": "3.3.6",
+          "Ninject.Extensions.Factory": "3.3.3"
+        },
         "compile": {
           "bin/placeholder/GlobalClasses.dll": {}
         },
@@ -1541,11 +1545,27 @@
           "bin/placeholder/GlobalClasses.dll": {}
         }
       },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Ninject": "3.3.6",
+          "Ninject.Extensions.Factory": "3.3.3"
+        },
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
+      },
       "ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.1.0",
+          "GlobalClasses": "1.0.0",
+          "Models": "1.0.0",
           "Ninject": "3.3.6",
           "Ninject.Extensions.Factory": "3.3.3"
         },
@@ -5290,6 +5310,11 @@
       "type": "project",
       "path": "../GlobalClasses/GlobalClasses.csproj",
       "msbuildProject": "../GlobalClasses/GlobalClasses.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
     },
     "ViewModels/1.0.0": {
       "type": "project",

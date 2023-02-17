@@ -1530,6 +1530,34 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "GlobalClasses/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Ninject": "3.3.6",
+          "Ninject.Extensions.Factory": "3.3.3"
+        },
+        "compile": {
+          "bin/placeholder/GlobalClasses.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GlobalClasses.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Ninject": "3.3.6",
+          "Ninject.Extensions.Factory": "3.3.3"
+        },
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
       }
     }
   },
@@ -5260,11 +5288,23 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "GlobalClasses/1.0.0": {
+      "type": "project",
+      "path": "../GlobalClasses/GlobalClasses.csproj",
+      "msbuildProject": "../GlobalClasses/GlobalClasses.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "CommunityToolkit.Mvvm >= 8.1.0",
+      "GlobalClasses >= 1.0.0",
+      "Models >= 1.0.0",
       "Ninject >= 3.3.6",
       "Ninject.Extensions.Factory >= 3.3.3"
     ]
@@ -5301,7 +5341,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\r4wst\\Documents\\Repositories\\Utility\\Tools\\Password Manager\\Password Manager\\Password Manager\\GlobalClasses\\GlobalClasses.csproj": {
+              "projectPath": "C:\\Users\\r4wst\\Documents\\Repositories\\Utility\\Tools\\Password Manager\\Password Manager\\Password Manager\\GlobalClasses\\GlobalClasses.csproj"
+            },
+            "C:\\Users\\r4wst\\Documents\\Repositories\\Utility\\Tools\\Password Manager\\Password Manager\\Password Manager\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\r4wst\\Documents\\Repositories\\Utility\\Tools\\Password Manager\\Password Manager\\Password Manager\\Models\\Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
