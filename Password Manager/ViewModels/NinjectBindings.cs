@@ -9,7 +9,7 @@ using ViewModels.ViewModels.Windows;
 namespace ViewModels
 {
     public class NinjectBindings
-    {
+    { 
         #region Fields
         private IKernel _kernel = GlobalClasses.NinjectHub.Kernel;
         #endregion
